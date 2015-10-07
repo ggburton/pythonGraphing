@@ -1,3 +1,5 @@
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from base_graphing import Get7DayLineGraph
 
@@ -11,4 +13,4 @@ plt.plot(x_days, y_tickets_closed, '#16811b', linewidth=2)
 fig.autofmt_xdate()
 plt.legend(['Opened Tickets', 'Closed Tickets'], loc="upper left")
 plt.savefig('7Day.png')
-plt.show()
+# plt.show()
